@@ -1,0 +1,41 @@
+@use '../../theme/sizing.module';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.img {
+  width: sizing.rem(300px);
+  height: sizing.rem(300px);
+}
+
+.form {
+  display: flex;
+  flex: 1;
+  padding: sizing.rem(10px) sizing.rem(20px);
+  border-radius: sizing.rem(10px);
+  flex-direction: column;
+
+  .formRow {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .formGroup {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-right: sizing.rem(20px);
+    }
+  }
+}
+
+.header {
+  font-size: sizing.rem(24px);
+  justify-content: center;
+}

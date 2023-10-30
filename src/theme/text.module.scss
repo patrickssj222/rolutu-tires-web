@@ -1,0 +1,9 @@
+$font-inter: 'Inter', sans-serif;
+
+@mixin truncate-at($numOfLines) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $numOfLines;
+  line-clamp: $numOfLines;
+  -webkit-box-orient: vertical;
+}

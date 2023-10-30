@@ -1,0 +1,66 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+@use '../../theme/text.module';
+@use '../../theme/breakpoints.module';
+
+.link {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: sizing.rem(24px);
+  justify-content: space-between;
+  overflow: initial;
+  text-decoration: underline;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+  }
+
+  &.withoutUnderline {
+    text-decoration: none;
+  }
+
+  &.underlineOnHover {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.primaryPalette {
+    color: colors.$grey-900;
+  }
+
+  &.defaultPalette {
+    color: colors.$blue-600;
+  }
+
+  &.dangerPalette {
+    color: colors.$danger-600
+  }
+
+  &:hover {
+    &.primaryPalette {
+      color: colors.$grey-500;
+      }
+
+    &.defaultPalette {
+      color: colors.$blue-500;
+      }
+
+    &.dangerPalette {
+      color: colors.$danger-300
+    }
+
+  }
+
+  .iconContainer {
+    display: flex;
+    height: sizing.rem(20px);
+    margin-left: sizing.rem(5px);
+    width: sizing.rem(20px);
+  }
+}

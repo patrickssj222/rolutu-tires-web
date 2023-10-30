@@ -1,0 +1,78 @@
+@use '../../../theme/colors.module';
+@use '../../../theme/sizing.module';
+
+@mixin link-styles {
+
+  background: none;
+  font-size: sizing.rem(16px);
+  font-weight: normal;
+  padding: 0;
+  text-decoration: underline;
+  width: auto;
+
+  &.primaryPalette,
+  &.accentPalette,
+  &.successPalette,
+  &.warningPalette,
+  &.dangerPalette {
+    &:disabled {
+      color: colors.$grey-200;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: colors.$grey-200;
+      }
+    }
+  }
+
+  &.primaryPalette {
+    color: colors.$grey-900;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: colors.$grey-600;
+    }
+  }
+
+  &.accentPalette {
+    color: colors.$accent-600;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: colors.$accent-700;
+    }
+  }
+
+  &.successPalette {
+    color: colors.$success-600;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: colors.$success-700;
+    }
+  }
+
+  &.warningPalette {
+    color: colors.$warning-600;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: colors.$warning-700;
+    }
+  }
+
+  &.dangerPalette {
+    color: colors.$danger-600;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: colors.$danger-700;
+    }
+  }
+}

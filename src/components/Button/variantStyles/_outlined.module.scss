@@ -1,0 +1,100 @@
+@use '../../../theme/colors.module';
+@use '../../../theme/sizing.module';
+
+@mixin outlined-styles {
+  background-color: colors.$white;
+  border: 1px solid;
+
+  .label {
+    font-weight: normal;
+  }
+
+  &.primaryPalette,
+  &.accentPalette,
+  &.successPalette,
+  &.warningPalette,
+  &.dangerPalette {
+    &:disabled {
+      border-color: colors.$grey-200;
+      color: colors.$grey-200;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: colors.$white;
+        border-color: colors.$grey-200;
+        color: colors.$grey-200;
+      }
+    }
+  }
+
+  &.primaryPalette {
+    border-color: colors.$grey-100;
+    color: colors.$grey-500;
+
+    &:hover,
+    &:focus {
+      background-color: colors.$grey-25;
+    }
+
+    &:active {
+      background-color: colors.$grey-50;
+    }
+  }
+
+  &.accentPalette {
+    border-color: colors.$accent-400;
+    color: colors.$accent-500;
+
+    &:hover,
+    &:focus {
+      background-color: colors.$accent-50;
+    }
+
+    &:active {
+      background-color: colors.$accent-100;
+    }
+  }
+
+  &.successPalette {
+    border-color: colors.$success-400;
+    color: colors.$success-500;
+
+    &:hover,
+    &:focus {
+      background-color: colors.$success-50;
+    }
+
+    &:active {
+      background-color: colors.$success-100;
+    }
+  }
+
+  &.warningPalette {
+    border-color: colors.$warning-400;
+    color: colors.$warning-500;
+
+    &:hover,
+    &:focus {
+      background-color: colors.$warning-50;
+    }
+
+    &:active {
+      background-color: colors.$warning-100;
+    }
+  }
+
+  &.dangerPalette {
+    border-color: colors.$danger-400;
+    color: colors.$danger-500;
+
+    &:hover,
+    &:focus {
+      background-color: colors.$danger-50;
+    }
+
+    &:active {
+      background-color: colors.$danger-100;
+    }
+  }
+}

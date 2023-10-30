@@ -1,0 +1,11 @@
+@mixin floating-content {
+  z-index: 1;
+}
+
+@mixin overlay {
+  z-index: 2;
+}
+
+@mixin sidebar {
+  z-index: 3;
+}

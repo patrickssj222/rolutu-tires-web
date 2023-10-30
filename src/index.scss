@@ -1,0 +1,29 @@
+@use 'theme/text.module';
+
+html {
+  display: flex;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: text.$font-inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex: 1;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+}

@@ -1,0 +1,36 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+@use '../../theme/text.module';
+
+.badge {
+  align-items: center;
+  border-radius: sizing.rem(4px);
+  justify-content: center;
+  padding: sizing.rem(5px) sizing.rem(8px);
+  text-align: center;
+
+  &.primaryPalette {
+     background-color: colors.$grey-900;
+     color: colors.$white;
+  }
+
+  &.accentPalette {
+    background-color: colors.$accent-200;
+    color: colors.$accent-600;
+  }
+
+  &.successPalette {
+    background-color: colors.$success-200;
+    color: colors.$success-600;
+  }
+
+  &.warningPalette {
+    background-color: colors.$warning-200;
+    color: colors.$warning-600;
+  }
+
+  &.dangerPalette {
+    background-color: colors.$danger-200;
+    color: colors.$danger-700;
+  }
+}

@@ -1,0 +1,62 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+@use '../../theme/text.module';
+
+
+.pill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: sizing.rem(10px);
+  flex-shrink: 0;
+  padding: sizing.rem(10px) sizing.rem(16px);
+  border-radius: sizing.rem(25px);
+
+  &.button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid transparent;
+  }
+
+  &.primaryPalette {
+    border: 1px solid colors.$grey-500;
+    color: colors.$grey-500;
+
+    &.button:hover {
+      background-color: colors.$grey-500;
+      color: colors.$white;
+    }
+  }
+
+  &.errorPalette {
+    background-color: colors.$grey-700;
+    color: colors.$white;
+
+    &.button {
+      background-color: colors.$grey-700;
+
+      &:hover {
+        border-color: colors.$grey-500;
+        background-color: colors.$grey-500;
+      }
+    }
+  }
+
+  &.square {
+    border-radius: sizing.rem(8px);
+  }
+
+  &.small {
+    font-size: sizing.rem(12px);
+  }
+
+  .icon {
+    width: sizing.rem(16px);
+    height: sizing.rem(16px);
+
+    &.small {
+      width: sizing.rem(12px);
+      height: sizing.rem(12px);
+    }
+  }
+}

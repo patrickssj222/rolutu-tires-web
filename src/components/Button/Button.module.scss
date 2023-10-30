@@ -1,0 +1,103 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+@use '../../theme/text.module';
+@use '../../theme/breakpoints.module';
+@use 'variantStyles/_primary.module';
+@use 'variantStyles/_outlined.module';
+@use 'variantStyles/_ghost.module';
+@use 'variantStyles/_link.module';
+
+.button {
+  align-items: center;
+  border: 0 none;
+  border-radius: sizing.rem(8px);
+  cursor: pointer;
+  display: flex;
+  padding: sizing.rem(10px);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.left {
+    justify-content: flex-start;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.loading {
+    height: sizing.rem(47px);
+    padding: 0;
+
+    .lottie {
+      height: sizing.rem(50px);
+      width: sizing.rem(50px);
+    }
+  }
+
+  .label {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &.hidden:not(:focus):not(:active) {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+      width: 1px;
+    }
+  }
+
+  .iconContainer {
+    display: flex;
+    height: auto;
+    width: auto;
+
+    &.leftIcon {
+      margin-right: sizing.rem(5px);
+    }
+
+    &.rightIcon {
+      margin-left: sizing.rem(5px);
+    }
+
+    &.withoutLabel {
+      margin: 0;
+    }
+  }
+
+  &.primary {
+    @include primary.primary-styles;
+  }
+
+  &.outlined {
+    @include outlined.outlined-styles;
+  }
+
+  &.ghost {
+    @include ghost.ghost-styles;
+  }
+
+  &.link {
+    @include link.link-styles;
+  }
+}
+
+@include breakpoints.mdUp {
+  .button {
+    max-width: sizing.rem(438px);
+    padding: sizing.rem(14px);
+  }
+}

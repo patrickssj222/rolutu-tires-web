@@ -1,0 +1,94 @@
+@use '../../../theme/colors.module';
+@use '../../../theme/sizing.module';
+
+@mixin ghost-styles {
+  background: none;
+  border: 0 none;
+  padding: sizing.rem(5px);
+  width: auto;
+
+  &.primaryPalette,
+  &.accentPalette,
+  &.successPalette,
+  &.warningPalette,
+  &.dangerPalette {
+    &:disabled {
+      color: colors.$grey-200;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: colors.$grey-200;
+      }
+    }
+  }
+
+  .label {
+    font-weight: normal;
+  }
+
+  &.primaryPalette {
+    color: colors.$grey-600;
+
+    &:hover,
+    &:focus {
+      color: colors.$grey-700;
+    }
+
+    &:active {
+      color: colors.$grey-800;
+    }
+  }
+
+  &.accentPalette {
+    color: colors.$accent-600;
+
+    &:hover,
+    &:focus {
+      color: colors.$accent-700;
+    }
+
+    &:active {
+      color: colors.$accent-800;
+    }
+  }
+
+  &.successPalette {
+    color: colors.$success-600;
+
+    &:hover,
+    &:focus {
+      color: colors.$success-700;
+    }
+
+    &:active {
+      color: colors.$success-800;
+    }
+  }
+
+  &.warningPalette {
+    color: colors.$warning-600;
+
+    &:hover,
+    &:focus {
+      color: colors.$warning-700;
+    }
+
+    &:active {
+      color: colors.$warning-800;
+    }
+  }
+
+  &.dangerPalette {
+    color: colors.$danger-600;
+
+    &:hover,
+    &:focus {
+      color: colors.$danger-700;
+    }
+
+    &:active {
+      color: colors.$danger-800;
+    }
+  }
+}

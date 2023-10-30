@@ -1,0 +1,44 @@
+@use 'theme/sizing.module';
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+  background-color: black;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.introContainer {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  min-height: sizing.rem(500px);
+  padding: sizing.rem(20px) sizing.rem(200px);
+}
+
+.findTireContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: sizing.rem(20px) sizing.rem(200px);
+}
+
+.title {
+  color: white;
+  font-size: sizing.rem(50px);
+}
+
+.button {
+  background-color: white;
+  padding: sizing.rem(10px) sizing.rem(20px);
+  width: sizing.rem(300px);
+  border: none;
+  border-radius: sizing.rem(5px);
+  font-size: sizing.rem(16px);
+  opacity: 0.9;
+}

@@ -1,0 +1,80 @@
+@use '../../../theme/colors.module';
+@use '../../../theme/sizing.module';
+
+@mixin primary-styles {
+  .label {
+    font-weight: 700;
+    line-height: 19px;
+  }
+
+  &.primaryPalette,
+  &.accentPalette,
+  &.successPalette,
+  &.warningPalette,
+  &.dangerPalette {
+    &:disabled {
+      background-color: colors.$grey-200;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: colors.$grey-200;
+      }
+    }
+  }
+
+  &.primaryPalette {
+    background-color: colors.$grey-900;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: colors.$grey-700;
+    }
+  }
+
+  &.accentPalette {
+    background-color: colors.$accent-600;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: colors.$accent-700;
+    }
+  }
+
+  &.successPalette {
+    background-color: colors.$success-600;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: colors.$success-700;
+    }
+  }
+
+  &.warningPalette {
+    background-color: colors.$warning-600;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: colors.$warning-700;
+    }
+  }
+
+  &.dangerPalette {
+    background-color: colors.$danger-600;
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: colors.$danger-700;
+    }
+  }
+}

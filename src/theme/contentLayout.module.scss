@@ -1,0 +1,20 @@
+@use 'sizing.module';
+@use 'breakpoints.module';
+
+$sidebar-width: sizing.rem(320px);
+
+.contentContainer {
+  padding: 0 sizing.rem(16px);
+}
+
+@include breakpoints.lgUp {
+  .contentContainer {
+    padding: 0 5%;
+  }
+}
+
+@include breakpoints.xlUp {
+  .contentContainer {
+    padding: 0 20%;
+  }
+}

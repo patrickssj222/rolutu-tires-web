@@ -1,0 +1,53 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+@use '../../theme/text.module';
+@use '../../theme/breakpoints.module';
+
+.container {
+  align-items: center;
+  border-radius: sizing.rem(8px);
+  display: flex;
+  font-size: sizing.rem(16px);
+  font-weight: 400;
+  justify-content: space-between;
+  padding: sizing.rem(16px) sizing.rem(24px);
+
+  .content {
+    align-items: center;
+    display: flex;
+  }
+
+  .messageWithLeftIcon {
+    margin-left: sizing.rem(10px);
+  }
+
+  &.primary {
+    background-color: colors.$grey-100;
+    border: 1px solid colors.$grey-300;
+    color: colors.$grey-900;
+  }
+
+  &.accent {
+    background-color: colors.$accent-100;
+    border: 1px solid colors.$accent-300;
+    color: colors.$accent-900;
+  }
+
+  &.success {
+    background-color: colors.$success-100;
+    border: 1px solid colors.$success-400;
+    color: colors.$success-900;
+  }
+
+  &.warning {
+    background-color: colors.$warning-100;
+    border: 1px solid colors.$warning-400;
+    color: colors.$warning-900;
+  }
+
+  &.danger {
+    background-color: colors.$danger-100;
+    border: 1px solid colors.$danger-300;
+    color: colors.$danger-800;
+  }
+}

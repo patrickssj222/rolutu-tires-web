@@ -1,0 +1,57 @@
+@use '../../theme/colors.module';
+@use '../../theme/sizing.module';
+.modal {
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.modalContentWrapper {
+  background-color: colors.$white;
+  border-radius: sizing.rem(8px);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: sizing.rem(16px);
+  width: fit-content;
+
+  .modalHeader {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: sizing.rem(16px);
+
+    .closeIconWrapper {
+      margin: 0;
+      padding: 0;
+
+      span {
+        margin: 0;
+      }
+
+      .closeIcon {
+        color: colors.$black;
+        height: sizing.rem(20px);
+        width: sizing.rem(20px);
+
+        &:hover {
+          color: colors.$blue-500;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

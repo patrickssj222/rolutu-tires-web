@@ -1,10 +1,9 @@
 import React from 'react';
-import Home from './pages/Home';
+import { Home } from 'pages/Home/Home';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import RequireAuth from './router/RequireAuth';
 import { Route, Routes } from 'react-router';
-import './App.css';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
 

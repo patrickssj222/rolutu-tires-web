@@ -1,0 +1,33 @@
+@use 'theme/sizing.module';
+@use 'theme/colors.module';
+@use 'theme/text.module';
+
+.textarea {
+  border-color: colors.$grey-500;
+  border-radius: sizing.rem(8px);
+  color: colors.$grey-700;
+  font-family: text.$font-inter;
+  font-size: sizing.rem(16px);
+  padding: sizing.rem(24px);
+  resize: none;
+  width: 100%;
+
+  &:disabled {
+    border-color: colors.$grey-300;
+    cursor: not-allowed;
+  }
+
+  &:focus,
+  &:active {
+    border-color: colors.$grey-500;
+    outline: none;
+  }
+
+  &:placeholder-shown {
+    border-color: colors.$grey-300;
+
+    &::placeholder {
+      color: colors.$grey-500;
+    }
+  }
+}
