@@ -2,9 +2,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
   width: 100%;
-  background-color: black;
+  background-image: url("../../assets/img/HomeBackground.jpg");
 }
 
 .video {
@@ -18,14 +18,23 @@
   display: flex;
   flex-direction: column;
   min-height: sizing.rem(500px);
-  padding: sizing.rem(20px) sizing.rem(200px);
+  padding: sizing.rem(20px) sizing.rem(200px) sizing.rem(40px);
+}
+
+.backgroundImage {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .findTireContainer {
   display: flex;
   flex-direction: row;
   background-color: white;
-  padding: sizing.rem(20px) sizing.rem(200px);
+  padding: sizing.rem(10px) sizing.rem(200px) sizing.rem(40px);
 }
 
 .title {

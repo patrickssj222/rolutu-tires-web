@@ -11,14 +11,16 @@
 .img {
   width: sizing.rem(300px);
   height: sizing.rem(300px);
+  margin-left: sizing.rem(50px);
 }
 
 .form {
   display: flex;
   flex: 1;
-  padding: sizing.rem(10px) sizing.rem(20px);
+  padding: 0 sizing.rem(20px);
   border-radius: sizing.rem(10px);
   flex-direction: column;
+
 
   .formRow {
     display: flex;
@@ -31,11 +33,38 @@
       flex: 1;
       flex-direction: column;
       margin-right: sizing.rem(20px);
+
+      .inputLabel {
+        font-weight: 500;
+        margin: sizing.rem(10px) 0;
+        font-size: sizing.rem(18px);
+      }
+
+      .input {
+        padding: sizing.rem(10px);
+        height: sizing.rem(20px);
+      }
     }
+  }
+  .formButtonWrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: sizing.rem(20px);
+  }
+  .formButton {
+    height: sizing.rem(40px);
+    width: 50%;
   }
 }
 
 .header {
-  font-size: sizing.rem(24px);
   justify-content: center;
+  margin: sizing.rem(20px) 0;
+
+  .headerText {
+    margin: 0;
+    font-size: sizing.rem(24px);
+  }
 }
