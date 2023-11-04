@@ -1,0 +1,75 @@
+@use 'theme/sizing.module';
+@use 'theme/colors.module';
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: black;
+  padding-left: sizing.rem(30px);
+  height: sizing.rem(80px);
+  display: flex;
+  align-items: center;
+}
+
+.navbarText {
+  color: white;
+  font-weight: bold;
+  font-size: sizing.rem(16px);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+
+  .sideBarWrapper {
+    display: flex;
+    min-width: 300px;
+    height: 100%;
+  }
+  .contentWrapper {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    flex-direction: row;
+    height: calc(100vh - 5rem);
+    flex-wrap: wrap;
+    padding: sizing.rem(20px) 0;
+  }
+}
+
+.modelCard {
+  width: sizing.rem(200px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: sizing.rem(10px);
+  border: 1px solid colors.$grey-100;
+  background-color: white;
+  padding: 0;
+  margin-right: sizing.rem(20px);
+  margin-bottom: sizing.rem(20px);
+
+  &:hover {
+    background-color: colors.$grey-100;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.modelText{
+  font-size: sizing.rem(15px);
+}
+
+.modelImage {
+  width: sizing.rem(100px);
+}

@@ -6,6 +6,7 @@ import RequireAuth from './router/RequireAuth';
 import { Route, Routes } from 'react-router';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
+import {Product} from "pages/Product/Product";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,46 @@
+@use '../../theme/sizing.module';
+@use '../../theme/colors.module';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$grey-50;
+  height: 100%;
+
+  .formWrapper {
+    margin: 0 sizing.rem(20px);
+  }
+
+  .formButton {
+    height: sizing.rem(40px);
+    display: flex;
+    width: 100%;
+    margin-top: sizing.rem(20px);
+  }
+
+  .titleWrapper {
+    .title {
+      margin: sizing.rem(20px) sizing.rem(20px);
+    }
+    border-bottom: 1px solid colors.$grey-200;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .inputLabel {
+    font-weight: 600;
+    margin: sizing.rem(10px) 0;
+    font-size: sizing.rem(14px);
+  }
+
+  .input {
+    padding: sizing.rem(10px);
+    height: sizing.rem(20px);
+    width: 100%;
+  }
+}

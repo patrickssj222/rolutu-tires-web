@@ -1,22 +1,20 @@
-import styles from './FindTireForm.module.scss'
+import {Button} from "components/Button/Button";
+import styles from "./SideBar.module.scss";
 import {TextInput} from "components/Input/TextInput";
 import {useState} from "react";
-import FindYourTireTutorial from 'assets/img/FindYourTireTutorial.png';
-import {Button} from "components/Button/Button";
-import {useNavigate} from "react-router-dom";
-export const FindTireForm = () => {
+
+export const SideBar = () => {
   const [width, setWidth] = useState('');
   const [profile, setProfile] = useState('');
   const [wheelSize, setWheelSize] = useState('');
   const [loadIndex, setLoadIndex] = useState('');
   const [speedRating, setSpeedRating] = useState('');
-  const navigate = useNavigate();
   return (
     <div className={styles.container}>
-      <form className={styles.form} onSubmit={() => navigate('/product')}>
-        <div className={styles.header}>
-          <h4 className={styles.headerText}>Find Your Tire</h4>
-        </div>
+      <div className={styles.titleWrapper}>
+        <h4 className={styles.title}>Specification</h4>
+      </div>
+      <div className={styles.formWrapper}>
         <div className={styles.formRow}>
           <div className={styles.formGroup}>
             <label className={styles.inputLabel}>Width</label>
@@ -41,11 +39,8 @@ export const FindTireForm = () => {
             <TextInput className={styles.input} value={speedRating} placeholder={'Speed Rating'} onTextChange={(string) => setSpeedRating(string)}/>
           </div>
         </div>
-        <div className={styles.formButtonWrapper}>
-          <Button className={styles.formButton} type={"submit"} label={"Find Tire"}/>
-        </div>
-      </form>
-      <img className={styles.img} src={FindYourTireTutorial}/>
+        <Button className={styles.formButton} label={'Search'}/>
+      </div>
     </div>
-  );
+  )
 }
