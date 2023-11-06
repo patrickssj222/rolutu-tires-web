@@ -1,0 +1,97 @@
+@use 'theme/sizing.module';
+@use 'theme/colors.module';
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  background-color: black;
+  padding-left: sizing.rem(30px);
+  height: sizing.rem(80px);
+  display: flex;
+  align-items: center;
+}
+
+.navbarText {
+  color: white;
+  font-weight: bold;
+  font-size: sizing.rem(16px);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: sizing.rem(40px);
+  margin-top: sizing.rem(40px);
+
+  .icon {
+    font-size: sizing.rem(40px);
+    margin-right: sizing.rem(20px);
+  }
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  padding: sizing.rem(20px) sizing.rem(80px);
+
+  .tireImg {
+    height: sizing.rem(400px);
+  }
+
+  .tireDescription {
+    margin-left: sizing.rem(80px);
+    min-height: 100%;
+  }
+
+  .verticalDivider {
+    border-left: colors.$grey-200 solid 1px;
+    height: 80%;
+    margin-left: sizing.rem(100px);
+  }
+
+  .formContainer {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: flex-end;
+    margin-left: sizing.rem(100px);
+    align-content: center;
+
+    .formWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .inputLabel {
+        font-weight: 600;
+        margin: sizing.rem(10px) 0;
+        font-size: sizing.rem(14px);
+      }
+
+      .input {
+        padding: sizing.rem(10px);
+        height: sizing.rem(20px);
+        width: 100%;
+      }
+    }
+
+    .formButton {
+      margin-top: sizing.rem(100px);
+      width: 50%;
+    }
+  }
+}

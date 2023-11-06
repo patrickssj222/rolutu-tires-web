@@ -11,7 +11,7 @@ export const Product = () => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <p className={styles.navbarText}>Rolutu Tires</p>
+        <p className={styles.navbarText} onClick={() => navigate("/")}>Rolutu Tires</p>
       </div>
       <div className={styles.body}>
         <div className={styles.sideBarWrapper}>
@@ -22,7 +22,7 @@ export const Product = () => {
             {
               tireList.map((tireItem, index) => {
                 return (
-                  <button key={index} type="button" className={styles.modelCard} onClick={() => {}}>
+                  <button key={index} type="button" className={styles.modelCard} onClick={() => navigate("/purchase")}>
                     <img key={index} className={styles.modelImage} src={tire} alt={"Tire"+index} />
                     <p className={styles.modelText}> {"TIre "+index} </p>
                   </button>
