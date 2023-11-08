@@ -11,6 +11,7 @@ import { getAnalytics } from 'firebase/analytics';
 
 import { AuthProvider } from './contexts/AuthProvider';
 import ErrorBoundary from './pages/ErrorBoundary';
+import * as process from "process";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -35,7 +36,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <AuthProvider>
           <App />
         </AuthProvider>
