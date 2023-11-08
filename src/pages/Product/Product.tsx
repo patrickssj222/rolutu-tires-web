@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Product.module.scss';
 import tire from 'assets/img/tire.png'
 import {SideBar} from "components/SideBar/SideBar";
+import {NavBar} from "components/NavBar/NavBar";
 export const Product = () => {
   const navigate = useNavigate();
   const tireList = [];
@@ -10,9 +11,7 @@ export const Product = () => {
     tireList.push({});
   return (
     <div className={styles.container}>
-      <div className={styles.navbar}>
-        <p className={styles.navbarText} onClick={() => navigate("/")}>Rolutu Tires</p>
-      </div>
+      <NavBar/>
       <div className={styles.body}>
         <div className={styles.sideBarWrapper}>
           <SideBar/>

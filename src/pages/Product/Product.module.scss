@@ -8,20 +8,6 @@
   height: 100%;
 }
 
-.navbar {
-  background-color: black;
-  padding-left: sizing.rem(30px);
-  height: sizing.rem(80px);
-  display: flex;
-  align-items: center;
-}
-
-.navbarText {
-  color: white;
-  font-weight: bold;
-  font-size: sizing.rem(16px);
-}
-
 .body {
   display: flex;
   flex: 1;

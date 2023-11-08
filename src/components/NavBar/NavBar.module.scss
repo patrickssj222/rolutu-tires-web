@@ -1,0 +1,14 @@
+@use 'theme/sizing.module';
+@use 'theme/colors.module';
+
+.navbar {
+  background-color: colors.$black;
+  padding-left: sizing.rem(30px);
+  height: sizing.rem(80px);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: sizing.rem(80px);
+}

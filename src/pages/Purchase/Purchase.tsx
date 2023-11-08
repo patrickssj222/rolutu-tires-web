@@ -6,15 +6,14 @@ import {SideBar} from "components/SideBar/SideBar";
 import {TextInput} from "components/Input/TextInput";
 import {Button} from "components/Button/Button";
 import {ChevronLeft} from "@mui/icons-material";
+import {NavBar} from "components/NavBar/NavBar";
 export const Purchase = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
-      <div className={styles.navbar}>
-        <p className={styles.navbarText} onClick={() => navigate("/")}>Rolutu Tires</p>
-      </div>
+      <NavBar/>
       <div className={styles.title}>
         <ChevronLeft className={styles.icon} onClick={() => navigate(-1)}/>
         <h1 >Grenlander Winter Edge II Tire For Passenger & CUV</h1>
