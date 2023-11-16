@@ -18,7 +18,7 @@ export const Home = () => {
           <text className={styles.flowHeader}>FIND YOUR TIRE</text>
           <div className={styles.horizontalDivider} />
           <text className={styles.flowText}>Talk with our sales, let us find the perfect tire for your needs</text>
-          <text className={styles.flowText}>Call Now: (226) 500 4775</text>
+          <text className={styles.flowText}>Call Now: +1 (647)-928-0925</text>
         </div>
         <div className={styles.flowGroup}>
           <LocalShippingOutlined className={styles.icon}/>
