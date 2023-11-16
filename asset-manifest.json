@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/rolutu-tires-web/static/css/main.77235796.css",
-    "main.js": "/rolutu-tires-web/static/js/main.92d0816b.js",
-    "static/js/787.5c046143.chunk.js": "/rolutu-tires-web/static/js/787.5c046143.chunk.js",
-    "static/media/FindYourTireTutorial.png": "/rolutu-tires-web/static/media/FindYourTireTutorial.df56a4263ce08b25a14b.png",
-    "static/media/tire.png": "/rolutu-tires-web/static/media/tire.cfc5dcb7e4e95d2d2b9e.png",
-    "static/media/HomeBackground.jpg": "/rolutu-tires-web/static/media/HomeBackground.e70ea35fc285753f6466.jpg",
-    "static/media/Logo-White.png": "/rolutu-tires-web/static/media/Logo-White.a13c2e53210653074216.png",
-    "index.html": "/rolutu-tires-web/index.html",
-    "main.77235796.css.map": "/rolutu-tires-web/static/css/main.77235796.css.map",
-    "main.92d0816b.js.map": "/rolutu-tires-web/static/js/main.92d0816b.js.map",
-    "787.5c046143.chunk.js.map": "/rolutu-tires-web/static/js/787.5c046143.chunk.js.map"
+    "main.css": "/static/css/main.3bcabcc1.css",
+    "main.js": "/static/js/main.3ed0b6ed.js",
+    "static/js/787.5c046143.chunk.js": "/static/js/787.5c046143.chunk.js",
+    "static/media/FindYourTireTutorial.png": "/static/media/FindYourTireTutorial.df56a4263ce08b25a14b.png",
+    "static/media/tire.png": "/static/media/tire.cfc5dcb7e4e95d2d2b9e.png",
+    "static/media/HomeBackground.jpg": "/static/media/HomeBackground.e70ea35fc285753f6466.jpg",
+    "static/media/Logo-White.png": "/static/media/Logo-White.a13c2e53210653074216.png",
+    "index.html": "/index.html",
+    "main.3bcabcc1.css.map": "/static/css/main.3bcabcc1.css.map",
+    "main.3ed0b6ed.js.map": "/static/js/main.3ed0b6ed.js.map",
+    "787.5c046143.chunk.js.map": "/static/js/787.5c046143.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77235796.css",
-    "static/js/main.92d0816b.js"
+    "static/css/main.3bcabcc1.css",
+    "static/js/main.3ed0b6ed.js"
   ]
 }
