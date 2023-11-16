@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.3bcabcc1.css",
-    "main.js": "/static/js/main.3ed0b6ed.js",
+    "main.css": "/static/css/main.3f63df26.css",
+    "main.js": "/static/js/main.f06273a9.js",
     "static/js/787.5c046143.chunk.js": "/static/js/787.5c046143.chunk.js",
-    "static/media/FindYourTireTutorial.png": "/static/media/FindYourTireTutorial.df56a4263ce08b25a14b.png",
+    "static/media/HomeBackground.png": "/static/media/HomeBackground.b72952f6e01696e250b1.png",
     "static/media/tire.png": "/static/media/tire.cfc5dcb7e4e95d2d2b9e.png",
-    "static/media/HomeBackground.jpg": "/static/media/HomeBackground.e70ea35fc285753f6466.jpg",
     "static/media/Logo-White.png": "/static/media/Logo-White.a13c2e53210653074216.png",
     "index.html": "/index.html",
-    "main.3bcabcc1.css.map": "/static/css/main.3bcabcc1.css.map",
-    "main.3ed0b6ed.js.map": "/static/js/main.3ed0b6ed.js.map",
+    "main.3f63df26.css.map": "/static/css/main.3f63df26.css.map",
+    "main.f06273a9.js.map": "/static/js/main.f06273a9.js.map",
     "787.5c046143.chunk.js.map": "/static/js/787.5c046143.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bcabcc1.css",
-    "static/js/main.3ed0b6ed.js"
+    "static/css/main.3f63df26.css",
+    "static/js/main.f06273a9.js"
   ]
 }
