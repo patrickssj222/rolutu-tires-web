@@ -17,8 +17,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  min-height: sizing.rem(260px);
-  padding: sizing.rem(100px) sizing.rem(80px);
+  min-height: sizing.rem(500px);
 
   .headerWrapper {
     display: flex;
@@ -45,11 +44,8 @@
 
 .backgroundImage {
   z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
-  height: sizing.rem(460px);
+  height: sizing.rem(640px);
 }
 
 .workFlowWrapper {

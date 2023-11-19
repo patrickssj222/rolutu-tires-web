@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeBackground from 'assets/img/HomeBackground.png';
+import HomeBackground from 'assets/img/WebsiteBanner.png';
 import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.scss';
 import {LocalShippingOutlined, PhoneOutlined, SafetyCheckOutlined} from "@mui/icons-material";
@@ -7,10 +7,8 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
-      <img className={styles.backgroundImage} src={HomeBackground} />
       <div className={styles.introContainer}>
-        <text className={styles.header}>Rolutu Tires</text>
-        <text className={styles.subHeader}>{"Affordable, Delivered To Your Doorstep"}</text>
+        <img className={styles.backgroundImage} src={HomeBackground} />
       </div>
       <div className={styles.workFlowWrapper}>
         <div className={styles.flowGroup}>
